@@ -1,2 +1,6 @@
-2a.
-2b.
+2a. Main_nobatch ran much smoother and faster than the original main. Not only was the average fps starting at 77 and settling at 50 in nobatch, 
+main started at 19 and slowly settled at 7.9 fps. The nobatch solution runs quicker and smoother, however it starts off with a larger incorrect 
+value before it eventually converges. 
+2b. Since the rasterization pipeline renders in stages for each fragment, to implement depth you can separate the sections of the screen into 
+a vector to represent the depth. Render the objects at the furthest depth first. This only requires initial sorting / set up of which object 
+is at what depth. 
